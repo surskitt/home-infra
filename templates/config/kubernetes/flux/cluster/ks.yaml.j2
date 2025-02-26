@@ -11,7 +11,7 @@ spec:
     secretRef:
       name: sops-age
   interval: 30m
-  path: ./kubernetes/flux/meta
+  path: ./kubernetes/mallard/flux/meta
   prune: true
   sourceRef:
     kind: GitRepository
@@ -36,7 +36,7 @@ spec:
     - name: cluster-meta
       namespace: flux-system
   interval: 30m
-  path: ./kubernetes/apps
+  path: ./kubernetes/mallard/apps
   prune: true
   postBuild:
     substituteFrom:

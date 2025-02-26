@@ -14,4 +14,4 @@ instance:
     kind: GitRepository
     url: "https://github.com/surskitt/home-infra.git"
     ref: "refs/heads/main"
-    path: kubernetes/flux/cluster
+    path: kubernetes/mallard/flux/cluster

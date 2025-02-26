@@ -9,7 +9,7 @@ spec:
   commonMetadata:
     labels:
       app.kubernetes.io/name: *app
-  path: ./kubernetes/apps/network/external/external-dns
+  path: ./kubernetes/mallard/apps/network/external/external-dns
   prune: true
   sourceRef:
     kind: GitRepository
@@ -34,7 +34,7 @@ spec:
     - name: external-external-dns
       namespace: network
   interval: 30m
-  path: ./kubernetes/apps/network/external/cloudflared
+  path: ./kubernetes/mallard/apps/network/external/cloudflared
   prune: true
   sourceRef:
     kind: GitRepository
@@ -58,7 +58,7 @@ spec:
     - name: cert-manager-tls
       namespace: cert-manager
   interval: 30m
-  path: ./kubernetes/apps/network/external/ingress-nginx
+  path: ./kubernetes/mallard/apps/network/external/ingress-nginx
   prune: true
   sourceRef:
     kind: GitRepository

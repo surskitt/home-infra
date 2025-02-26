@@ -27,7 +27,7 @@ function wait_for_nodes() {
 function apply_namespaces() {
     log debug "Applying namespaces"
 
-    local -r apps_dir="${ROOT_DIR}/kubernetes/apps"
+    local -r apps_dir="${ROOT_DIR}/kubernetes/mallard/apps"
 
     if [[ ! -d "${apps_dir}" ]]; then
         log error "Directory does not exist" "directory=${apps_dir}"

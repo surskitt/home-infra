@@ -34,7 +34,7 @@ spec:
     labels:
       app.kubernetes.io/name: *app
   interval: 30m
-  path: ./kubernetes/mallard/mallard/apps/network/internal/k8s-gateway
+  path: ./kubernetes/mallard/apps/network/internal/k8s-gateway
   prune: true
   sourceRef:
     kind: GitRepository
